@@ -1,4 +1,4 @@
-export default createMenu = (root) => {
+const createMenu = (root) => {
   const mainElement = document.createElement('main');
   const menuSection = document.createElement('section');
   const articleElement = document.createElement('article');
@@ -19,3 +19,4 @@ export default createMenu = (root) => {
   footnoteElement.classList = 'footnote';
   footnoteElement.innerHTML = 'Prices are not inflation-adjusted. You must manually convert using year of Ragnarok as a base year!'
 }
+export default createMenu;

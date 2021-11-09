@@ -1,4 +1,4 @@
-export default createHome = (root) => {
+const createHome = (root) => {
   const mainElement = document.createElement('main');
   const sectionElement = document.createElement('section');
 
@@ -22,12 +22,13 @@ export default createHome = (root) => {
     paraElement.id = `home-text-${i}`;
   }
 
-  const firstText = document.getElementById('home-text-1');
-  const secondText = document.getElementById('home-text-2');
-  const thirdText = document.getElementById('home-text-3');
+  const firstText = document.getElementById('home-text-0');
+  const secondText = document.getElementById('home-text-1');
+  const thirdText = document.getElementById('home-text-2');
 
   firstText.innerHTML = 'Delectable starters';
   secondText.innerHTML = 'Unimaginable and legendary mains';
   thirdText.innerHTML = 'Magical desserts';
 
 }
+export default createHome;

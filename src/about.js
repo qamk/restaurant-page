@@ -1,4 +1,4 @@
-export default createAbout = (root) => {
+const createAbout = (root) => {
   const mainElement = document.createElement('main');
   const aboutSection = document.createElement('section');
   const aboutContainer = document.createElement('div');
@@ -27,3 +27,4 @@ export default createAbout = (root) => {
     contactContainer.appendChild(contactPara);
 
 }
+export default createAbout;
