@@ -5,6 +5,8 @@ const createHome = (root) => {
   root.appendChild(mainElement);
   mainElement.appendChild(sectionElement);
 
+  sectionElement.classList = 'section home-section';
+
   for (let i=0; i<3; i++) {
     const articleElement = document.createElement('article');
     const figureElement = document.createElement('figure');
@@ -16,7 +18,7 @@ const createHome = (root) => {
 
     sectionElement.appendChild(articleElement);
       articleElement.appendChild(figureElement);
-    sectionElement.appendChild(captionContainer);
+    articleElement.appendChild(captionContainer);
       captionContainer.appendChild(paraElement);
 
     paraElement.id = `home-text-${i}`;

@@ -11,12 +11,13 @@ const createMenu = (root) => {
       menuSection.appendChild(articleElement);
         articleElement.appendChild(textContainer);
           textContainer.appendChild(paraElement);
-            textContainer.appendChild(footnoteElement);
+          textContainer.appendChild(footnoteElement);
 
+  menuSection.classList = 'section menu-section';
   articleElement.classList = 'menu-container';
   textContainer.classList = 'menu-text-container';
-  paraElement.innerHTML = "Seabass with a side of chips in draupnir sauce (get more than your money's worth 9 days after your first visit!)\t150 gold\nRoasted vegetables & halloumi on Gungnir\t300 gold\nSeasonal fruit served in Hringhorni (a replica obviously)\t900 gold"
+  paraElement.innerText = "150 gold:\nSeabass with a side of chips in draupnir sauce (get more than your money's worth 9 days after your first visit!)\n\n300 gold:\nRoasted vegetables & halloumi on Gungnir\n\n900 gold:\nSeasonal fruit served in Hringhorni (a replica obviously)";
   footnoteElement.classList = 'footnote';
-  footnoteElement.innerHTML = 'Prices are not inflation-adjusted. You must manually convert using year of Ragnarok as a base year!'
+  footnoteElement.innerText = 'Prices are not inflation-adjusted. You must manually convert using year of Ragnarok as a base year!'
 }
 export default createMenu;

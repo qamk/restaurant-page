@@ -9,7 +9,11 @@ const createAbout = (root) => {
   const contactTitle = document.createElement('h2');
   const contactPara = document.createElement('p');
   
-  aboutSection.classList = 'about-section';
+  aboutSection.classList = 'section about-section';
+
+  aboutContainer.classList = 'about-container';
+  contactContainer.classList = 'about-container';
+
 
   aboutTitle.innerHTML = 'About Us';
   aboutPara.innerHTML = 'We are a restaurant dedicated to bringing the mythological to life in the form of impossible-to-imagine and affordable food';

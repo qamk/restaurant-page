@@ -1,0 +1,143 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  font: 18px/1.1 'Courier New', Courier, monospace;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-items > li {
+  float: left;
+  margin: 10px 15px 0 0;
+  font-size: 1.3rem;
+  padding: 2px 9px;
+  border: 1px solid rgb(109, 109, 109);
+  border-top: none;
+  border-bottom: none;
+}
+
+.navbar-items > li:hover {
+  background-color: #e4e6a8;
+}
+
+.section {
+  padding: 30px;
+}
+
+.home-section {
+  background-color: #bfc4c9;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .home-section {
+    flex-direction: column;
+  }
+}
+
+.card {
+  max-width: 310px;
+  height: 250px;
+  padding-right: 5px;
+}
+
+.card > figure:hover {
+  transform: scale(1.1);
+}
+
+.card > figure {
+  height: 40%;
+  border: 1px solid #3796bb;
+  background-color: #2aa7bd;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px 1px #777;
+  margin-bottom: 10px;
+  transition: width 2s, height 2s;
+}
+
+.menu-section {
+  background-color: #a4c7ce;
+}
+
+.menu-text-container {
+  border: 2px solid #5a6fe7;
+  box-shadow: 2px 1px 2px #8895db;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 80%;
+  line-height: 1.5;
+}
+
+.about-section {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+  .about-container {
+    width: auto;
+  }
+}
+
+.about-section > h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #867630;
+  padding: 10px 0;
+}
+
+.about-container {
+  height: 150px;
+  width: 80%;
+  margin: 5px 0;
+  background: white;
+  padding: 3px;
+  position: relative;
+  background-clip: content-box;
+  box-shadow: 6px 9px 4px #737899;
+}
+
+.about-container:after, .about-container:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content:'';
+}
+
+.about-container:before {
+  background: linear-gradient(#539ca8 20%, #8895db);
+  z-index: -2;
+}
+
+.about-container:hover:after {
+  opacity: 0;
+}
+
+.about-container:after {
+  background: linear-gradient(#1d244e 33%, #8895db);
+  transition: opacity 100ms;
+  z-index: -1;
+}
+
+.about-container > p {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  font-size: 1.2rem;
+}
